@@ -1,1 +1,3 @@
-# Altk-k_d-mlerinin_toplam-
+# Alt_kok_dugumlerinin_toplami
+
+Amac
