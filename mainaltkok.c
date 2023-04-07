@@ -26,7 +26,7 @@ int main(int argc, char *argv[]) {
 	int Kok;                                     
 	int Sol;                 // Buradaki tanımlamalar sol ve sag node'un sayıları.
 	int Sag;
-    int toplam;
+     int toplam;
     
 	printf("Kok degerini giriniz : ");
 	scanf("%d",&Kok);
