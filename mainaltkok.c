@@ -1,22 +1,22 @@
 #include <stdio.h>
 #include <stdlib.h>
-                                                 /* Agaçtaki Kök degeri alt dügümlerin toplami mi? 
-									       Size tam olarak 3 dügümden olusan ikili bir agacin kökü verildiginde, 
-									        bu degerin alt dügümlerin(child) toplami olup olmadigini bulun */
+                                                 /* AgaÃ§taki KÃ¶k degeri alt dÃ¼gÃ¼mlerin toplami mi? 
+	                                   Size tam olarak 3 dÃ¼gÃ¼mden olusan ikili bir agacin kÃ¶kÃ¼ verildiginde, 
+		                             bu degerin alt dÃ¼gÃ¼mlerin(child) toplami olup olmadigini bulun */
     // Isikay Cetin 1220505031
-struct node{      // ağaç yapısı için bir struct node tanımladık.
-	int value;          // Node saklandığı yer.
-	struct node *sol;       // Node'un sol alt düğümü
-	struct node *sag;        // Node'un sag alt düğümü 
+struct node{      // aÄŸaÃ§ yapÄ±sÄ± iÃ§in bir struct node tanÄ±mladÄ±k.
+	int value;          // Node saklandÄ±ÄŸÄ± yer.
+	struct node *sol;       // Node'un sol alt dÃ¼ÄŸÃ¼mÃ¼
+	struct node *sag;        // Node'un sag alt dÃ¼ÄŸÃ¼mÃ¼ 
 };
 
 
 struct node *nodeyeni(int value){               // yeni node ekleyen fonksiyon.
 	
-	struct node *node = (struct node*)malloc(sizeof(struct node));    // hafızamızda yer ayırdık.
+	struct node *node = (struct node*)malloc(sizeof(struct node));    // hafÄ±zamÄ±zda yer ayÄ±rdÄ±k.
 	node->value=value;
-	node->sag=NULL;                 // Null atadık.
-	node->sol=NULL;	                // Null atadık.
+	node->sag=NULL;                 // Null atadÄ±k.
+	node->sol=NULL;	                // Null atadÄ±k.
 	return(node);  
 }
 
@@ -24,7 +24,7 @@ struct node *nodeyeni(int value){               // yeni node ekleyen fonksiyon.
 int main(int argc, char *argv[]) {
 	
 	int Kok;                                     
-	int Sol;                 // Buradaki tanımlamalar sol ve sag node'un sayıları.
+	int Sol;                 // Buradaki tanÄ±mlamalar sol ve sag node'un sayÄ±larÄ±.
 	int Sag;
     int toplam;
     
@@ -41,7 +41,7 @@ int main(int argc, char *argv[]) {
 	
 	toplam=(kok->sag->value)+(kok->sol->value);
 	
-	if(toplam==kok->value)             // Eger girilen alt degerlerin toplamı koke esitse ekrana yazdırsın.
+	if(toplam==kok->value)             // Eger girilen alt degerlerin toplamÄ± koke esitse ekrana yazdÄ±rsÄ±n.
 	    printf("\n\n Kokun alt dugumlerinin toplami koke esittir.");
 	    
 	else
