@@ -30,10 +30,10 @@ int main(int argc, char *argv[]) {
     
 	printf("Kok degerini giriniz : ");
 	scanf("%d",&Kok);
-	printf("Sag dugum degerini giriniz :");
-	scanf("%d",&Sag);
-	printf("Sol dugum degerini giriniz :");
+	printf("Sol node degerini giriniz :");
 	scanf("%d",&Sol);
+	printf("Sag node degerini giriniz :");
+	scanf("%d",&Sag);
 	
 	struct node *kok= nodeyeni(Kok);              // Dugumleri olusturduk.
 	kok->sol=nodeyeni(Sol);
